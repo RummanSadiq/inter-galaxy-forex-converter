@@ -1,5 +1,4 @@
-require "bundler/setup"
-require "inter/galaxy/forex/converter"
+require "converter"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

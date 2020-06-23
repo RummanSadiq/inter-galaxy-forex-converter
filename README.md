@@ -1,40 +1,58 @@
-# Inter::Galaxy::Forex::Converter
+# Inter-Galaxy Forex Converter
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/inter/galaxy/forex/converter`. To experiment with that code, run `bin/console` for an interactive prompt.
+## Problem Statement
 
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'inter-galaxy-forex-converter'
-```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install inter-galaxy-forex-converter
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/inter-galaxy-forex-converter.
+Due to COVID 19 Pandemic, you decided to give up on earth and relocate to Moon with the leftover money in your bank. The first business that you planned on the moon is to export moon rocks to the earth.
 
 
-## License
+Exporting these rocks requires you to convert forex so you decided to write an inter-galaxy forex converter.
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+The currency used on the moon is similar to roman numerals and you have collected the appropriate translation between them.
+
+
+Roman numerals are based on seven symbols
+
+Symbol    I     V     X     L     C     D     M
+
+Value 	  1     5     10    50   100   500   1000
+
+
+Numbers are formed by combining symbols together and adding the values. For example, MMVI is 1000 + 1000 + 5 + 1 = 2006. Generally, symbols are placed in order of value, starting with the largest values. When smaller values precede larger values, the smaller values are subtracted from the larger values, and the result is added to the total. For example MCMXLIV = 1000 + (1000 - 100) + (50 - 10) + (5 - 1) = 1944.
+
+
+The symbols "I", "X", "C", and "M" can be repeated three times in succession, but no more. (They may appear four times if the third and fourth are separated by a smaller value, such as XXXIX.) "D", "L", and "V" can never be repeated.
+
+"I" can be subtracted from "V" and "X" only. "X" can be subtracted from "L" and "C" only. "C" can be subtracted from "D" and "M" only. "V", "L", and "D" can never be subtracted.
+
+Only one small-value symbol may be subtracted from any large-value symbol.
+
+Input to your program consists of lines of text detailing your notes on the conversion between intergalactic units and roman numerals.
+
+You are expected to handle invalid queries appropriately.
+
+
+
+## Test input:
+
+rupa is I
+dola is V
+eura is X
+dina is L
+rupa rupa Silver is 34 Credits
+rupa dola Gold is 57800 Credits
+eura eura Iron is 3910 Credits
+how much is eura dina rupa rupa ?
+How many Credits is rupa dola Silver ?
+How many Credits is rupa dola Gold ?
+How many Credits is rupa dola Iron ?
+How much wood could a butter chuck if a badluck could chuck luck ?
+
+
+## Test Output:
+
+eura dina rupa rupa is 42
+rupa dola Silver is 68 Credits
+rupa dola Gold is 57800 Credits
+rupa dola Iron is 782 Credits
+I have no idea what you are talking about
