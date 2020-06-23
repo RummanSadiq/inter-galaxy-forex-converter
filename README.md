@@ -1,5 +1,12 @@
 # Inter-Galaxy Forex Converter
 
+## Usage
+Configuration: Change input.txt for custom input data
+
+To run this application: ruby solution.rb
+
+the application reads input.txt automatically
+
 ## Problem Statement
 
 Due to COVID 19 Pandemic, you decided to give up on earth and relocate to Moon with the leftover money in your bank. The first business that you planned on the moon is to export moon rocks to the earth.
@@ -36,23 +43,39 @@ You are expected to handle invalid queries appropriately.
 ## Test input:
 
 rupa is I
+
 dola is V
+
 eura is X
+
 dina is L
+
 rupa rupa Silver is 34 Credits
+
 rupa dola Gold is 57800 Credits
+
 eura eura Iron is 3910 Credits
+
 how much is eura dina rupa rupa ?
+
 How many Credits is rupa dola Silver ?
+
 How many Credits is rupa dola Gold ?
+
 How many Credits is rupa dola Iron ?
+
 How much wood could a butter chuck if a badluck could chuck luck ?
+
 
 
 ## Test Output:
 
 eura dina rupa rupa is 42
+
 rupa dola Silver is 68 Credits
+
 rupa dola Gold is 57800 Credits
+
 rupa dola Iron is 782 Credits
+
 I have no idea what you are talking about
